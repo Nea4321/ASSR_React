@@ -1,0 +1,43 @@
+.nextSteps {
+  display: flex;
+  border-top: 1px solid var(--border);
+  text-align: left;
+}
+
+.nextSteps > div {
+  flex: 1 1 0;
+  padding: 32px;
+}
+
+.icon {
+  margin-bottom: 16px;
+  width: 22px;
+  height: 22px;
+}
+
+.docs {
+  border-right: 1px solid var(--border);
+}
+
+@media (prefers-color-scheme: dark) {
+  .social a img,
+  .social a svg {
+    filter: invert(1) brightness(2);
+  }
+}
+
+@media (max-width: 1024px) {
+  .nextSteps {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nextSteps > div {
+    padding: 24px 20px;
+  }
+
+  .docs {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
