@@ -1,3 +1,3 @@
 export { App } from './App'
-export { AppProviders } from './providers'
+export { AppProviders, QueryProvider } from './providers'
 export { AppRouter } from './router'
